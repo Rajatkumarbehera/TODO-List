@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@100;300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: linear-gradient(to right, #2c3e50, #4ca1af);
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.container {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container h1 {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+form {
+    display: flex;
+}
+
+input[type="text"],
+button {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#item {
+    flex: 1 1 0%;
+    border-bottom: 1px solid #fff;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    margin-right: 1rem;
+    color: #fff;
+}
+
+::placeholder {
+    color: #fff;
+    opacity: 0.3;
+}
+
+button {
+    background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    background-repeat: no-repeat;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 0 10px;
+    cursor: pointer;
+    font-weight: 300;
+}
+
+button:active {
+    opacity: 0.5;
+}
+
+#tasks {
+    display: 1 1 0%;
+    padding: 0.5rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#tasks .task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border-bottom: 1px solid #808080;
+}
+
+#tasks .task .content {
+    width: 80%;
+}
+
+#tasks .task .content .text{
+    width: 100%;
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #fff;
+}
+
+#tasks .task .actions {
+    display: flex;
+    margin: 0 -0.5rem;
+}
+
+.task .actions button {
+    margin: 0 0.3rem;
+    padding: 0.3rem 0.3rem;
+}
+
+#tasks .task .action button{
+    padding: 0.3rem;
+    font-weight: 300;
+}
